@@ -18,16 +18,16 @@
 <body>
     <div class="p-3 mb-2 bg-dark-subtle text-emphasis-dark"><h1>Success !</h1><p>Hope , we will be in contact very soon ! </p><div id="redirect"></div></div>
     <script>
-        var second=0;
+        var second=5;
         function displayseconds(){
-            seconds+=1;
+            second-=1;
             document.getElementById("redirect").innerHTML="This Page will be Redirected in "+second+" Seconds ... ";
         }
-        setInterval(displayseconds(),1000);
+        setInterval(displayseconds,1000);
         function redirectPage(){
             window.location="/";
         }
-        setTimeout(redirectPage(),4000);
+        setTimeout(redirectPage,4000);
     </script>
     
 </body>

@@ -14,16 +14,16 @@ app.get("/", function (req, res) {
 
 app.post("/", function (req, res) {
   const fname = req.body.first;
-  const e_mail = req.body.mail;
   const sub=req.body.subject;
-  const lname = req.body.message;
+  const e_mail = req.body.mail;
+  // const lname = req.body.message;
   
   const data = {
     members: [
       {
         email_address: e_mail,
         status: "subscribed",
-        merge_fields: { FNAME: fname, LNAME:sub, ADDRESS: lname },
+        merge_fields: { FNAME: fname, LNAME:sub},
       },
     ],
   };
@@ -41,6 +41,7 @@ app.post("/", function (req, res) {
     }
     response.on("data", function (data) {
       console.log(res.statusCode);
+      console.log(data);
     });
   });
 
