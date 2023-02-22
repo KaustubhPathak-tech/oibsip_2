@@ -881,11 +881,30 @@ footer span a:hover {
     
     .social-media {
         display: inline-block;
-        margin-left: 14%;
+       
         margin-bottom: 5%;
         
         /* border: 1px solid red; */
         /* line-height: 2.5rem; */
     }
    
-} 
+} @media (max-width:500px) {
+    .social-media {
+        display: inline-block;
+        margin-left: 10%;
+        margin-bottom: 5%;
+        
+        /* border: 1px solid red; */
+        /* line-height: 2.5rem; */
+    }
+    .social-media i {
+        margin: 0px;
+        padding: 4px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        box-sizing: border-box;
+        box-shadow: 1px 4px 2px 2px #a2a2a2;
+    
+    
+    }
+}
