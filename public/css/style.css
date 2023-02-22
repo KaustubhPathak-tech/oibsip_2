@@ -879,6 +879,13 @@ footer span a:hover {
     }
     
     
-    
+    .social-media {
+        display: inline-block;
+        margin-left: 14%;
+        margin-bottom: 5%;
+        
+        /* border: 1px solid red; */
+        /* line-height: 2.5rem; */
+    }
    
 } 
