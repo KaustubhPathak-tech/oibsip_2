@@ -901,7 +901,7 @@ footer span a:hover {
 } @media (max-width:500px) {
     .social-media {
         display: inline-block;
-        margin-left: 4%;
+        margin-left: 14%;
         margin-bottom: 5%;
         
         /* border: 1px solid red; */
