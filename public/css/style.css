@@ -887,11 +887,21 @@ footer span a:hover {
         /* border: 1px solid red; */
         /* line-height: 2.5rem; */
     }
+    /* #me{
+        width: 95%;
+    }
+    #nav{
+        width: 95%;
+    } */
+    /* #col-left{
+        border: 10px solid red;
+        width: 95%;
+    } */
    
 } @media (max-width:500px) {
     .social-media {
         display: inline-block;
-        margin-left: 10%;
+        margin-left: 4%;
         margin-bottom: 5%;
         
         /* border: 1px solid red; */
