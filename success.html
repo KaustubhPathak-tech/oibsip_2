@@ -23,7 +23,7 @@
             seconds+=1;
             document.getElementById("redirect").innerHTML="This Page will be Redirected in "+second+" Seconds ... ";
         }
-        setInterval(displayseconds,1000);
+        setInterval(displayseconds(),1000);
         function redirectPage(){
             window.location="/";
         }
