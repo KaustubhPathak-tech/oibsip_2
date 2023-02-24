@@ -872,6 +872,7 @@ footer span a:hover {
         position: absolute;
         top: 20%;
         left: 50%;
+        padding-bottom: 5%;
         transform: translate(-50%, -50%);
     }
     #hiremebutton{
