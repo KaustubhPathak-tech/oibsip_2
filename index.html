@@ -250,7 +250,7 @@
                             <input type="text" cols="30" rows="10" placeholder="Message.." required name="message"></input>
                         </div> -->
                         <div class="button-area">
-                            <button type="submit" onclick="sendEmail()">Send message</button>
+                            <button type="submit">Send message</button>
                         </div>
                     </form>
                 </div>
@@ -299,21 +299,7 @@
     </footer>
     <script>
         
-        function sendEmail(){
-            console.log("Hurray");
-            const xhr = new XMLHttpRequest();
-            xhr.open("POST", "http://localhost:3000/sendmail");
-            xhr.send();
-            xhr.responseType = "json";
-            xhr.onload = () => {
-                if (xhr.readyState == 4 && xhr.status == 200) {
-                    console.log(xhr.response);
-                } else {
-                    console.log(`Error: ${xhr.status}`);
-                }
-            };
-             
-        }
+        
     </script>
     <script src="particle/script.js"></script>
     
