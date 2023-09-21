@@ -54,16 +54,16 @@ app.post("/", async function posting(req, res) {
     const mailoption1 = {
       from: "<kaustubhpathak9@gmail.com>",
       to: e_mail,
-      subject: "Verify Your Account",
+      subject: "Thanks from Kaustubh Pathak ",
       text: "Hello from Kaustubh",
-      html: `<p>Enter <b>This is Kaustubh Pathak</b> in the website to verify your email address and complete signup!</p><p>This code <b>expires in 1 hour</b>.</p><br/><p><a href="https://stack-over-flow-clone-2023.vercel.app/" style="text-decoration:"none">&copy; Stack Over Flow Clone 2023</a></p>`,
+      html: `<p> <b>This is Kaustubh Pathak</b> </p><p>Thank you for reach out to me. I'll contact you soon! </p><br/> <p>Have a nice day !</p>`,
     };
     const recieved={
       from:e_mail,
       to:"<kaustubhpathak9@gmail.com>",
-      subject:"New User Subscribed",
+      subject:"New User Contacted",
       text:`Hello from ${fname} `,
-      html:`<p>Namste Kaustubh, This is ${fname} </p>`,
+      html:`<p>Namste Kaustubh, This is ${fname} </p> <br> message: <p> ${sub} </p> `,
     }
     await transporter.sendMail(mailoption1);
     await transporter.sendMail(recieved);
